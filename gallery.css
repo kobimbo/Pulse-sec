@@ -1,0 +1,104 @@
+/* ============================================================
+   gallery.css — Gallery Page Specific Styles
+   ============================================================ */
+
+/* ── Page Header ── */
+.page-header {
+  background: var(--blue);
+  padding: 64px 5% 52px;
+  color: var(--white);
+}
+
+.page-header-inner { max-width: 1180px; margin: 0 auto; }
+
+.page-header h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--white);
+}
+
+.page-header .divider { background: var(--terracotta); }
+
+.page-header p {
+  color: rgba(255,255,255,.7);
+  font-size: .95rem;
+  margin-top: .5rem;
+}
+
+/* ── Masonry Photo Grid ── */
+.masonry-grid {
+  columns: 4 220px;
+  column-gap: 14px;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #d8d8d8;           /* placeholder colour while image loads */
+  cursor: pointer;
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.025);
+  box-shadow: 0 10px 30px rgba(45,45,45,.18);
+  z-index: 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  /* Each image uses its natural aspect ratio — Pinterest style */
+}
+
+/* ── Video Section ── */
+.video-section {
+  background: var(--white);
+  border-top: 2px solid var(--sage);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.video-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--charcoal);
+  box-shadow: 0 4px 16px var(--shadow);
+  transition: transform 0.24s ease;
+}
+
+.video-item:hover { transform: translateY(-4px); }
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;   /* 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .masonry-grid { columns: 3 180px; }
+  .video-grid   { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .masonry-grid { columns: 2 140px; column-gap: 10px; }
+  .masonry-grid .gallery-item { margin-bottom: 10px; }
+  .video-grid   { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Pulse-sec</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="index.html" class="nav-brand">Pulse<span>-sec</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="board.html">Our Board</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── PAGE HEADER ── -->
+  <div class="page-header">
+    <div class="page-header-inner">
+      <h1>Gallery</h1>
+      <div class="divider"></div>
+      <p>A visual record of our awareness events and educational initiatives</p>
+    </div>
+  </div>
+
+  <!-- ── PHOTOS SECTION ── -->
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title">Photos</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Moments from our cybersecurity awareness events across Ghana</p>
+
+      <!--
+        HOW TO ADD PHOTOS:
+        Duplicate any <div class="gallery-item"> block below.
+        Replace src="images/photo1.jpg" with your actual image path.
+        Each image will auto-fit into the Pinterest-style masonry layout.
+      -->
+      <div class="masonry-grid" id="photoGrid">
+
+        <div class="gallery-item">
+          <img src="./ for input" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo2.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo3.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo4.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo5.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo6.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo7.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo8.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo9.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo10.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo11.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/photo12.jpg" alt="Event photo" loading="lazy" />
+        </div>
+
+      </div><!-- /masonry-grid -->
+    </div>
+  </section>
+
+  <!-- ── VIDEOS SECTION ── -->
+  <section class="section video-section">
+    <div class="section-inner">
+      <h2 class="section-title">Videos</h2>
+      <div class="divider"></div>
+      <p class="section-sub">Watch recordings from our sessions, panels, and awareness campaigns</p>
+
+      <!--
+        HOW TO ADD VIDEOS:
+        Option A — YouTube embed:
+          Replace the src in the <iframe> with your YouTube embed link.
+          Format: https://www.youtube.com/embed/VIDEO_ID
+
+        Option B — Local video file:
+          Replace the <iframe> with:
+          <video controls>
+            <source src="videos/your-video.mp4" type="video/mp4" />
+          </video>
+
+        Duplicate any <div class="video-item"> to add more videos.
+      -->
+      <div class="video-grid">
+
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_1"
+              title="Pulse-sec Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_2"
+              title="Pulse-sec Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_3"
+              title="Pulse-sec Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_4"
+              title="Pulse-sec Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_5"
+              title="Pulse-sec Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID_6"
+              title="Pulse-sec Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      </div><!-- /video-grid -->
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Pulse<span>-sec</span></div>
+          <p style="font-size:.88rem; color:rgba(255,255,255,.6); max-width:280px; margin-bottom:1.25rem;">
+            Raising cybersecurity awareness for e-commerce professionals across Ghana.
+          </p>
+          <a href="https://www.youtube.com/@YourChannel" target="_blank" rel="noopener" class="btn btn-youtube">
+            <span class="yt-icon">&#9654;</span> Our YouTube
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="board.html">Our Board</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@pulse-sec.gh">info@pulse-sec.gh</a></li>
+            <li><a href="#">Accra, Ghana</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Pulse-sec. All rights reserved.</span>
+        <span>Cybersecurity Awareness Initiative — Ghana</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+</body>
+</html>
